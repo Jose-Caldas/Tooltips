@@ -2,11 +2,11 @@ import { FaCheck } from "react-icons/fa";
 import { RiCloseLine } from "react-icons/ri";
 import "../../styles/FirstTip.css";
 
-export default function Tips() {
+export default function FirstTip() {
   return (
-    <div className="contentTips">
+    <div className="firstTipContainer">
       <span>
-        <p>Paste or type a link</p>
+        <strong>Paste or type a link</strong>
       </span>
       <span>
         <FaCheck />

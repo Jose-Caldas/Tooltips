@@ -1,24 +1,25 @@
-.contentTips {
-  display: flex;
-
-  border-radius: 7px;
-  color: white;
-  align-items: center;
+.firstTipContainer {
+  margin-bottom: 150px;
 }
 
-.contentTips span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
+.firstTipContainer span {
+  padding: 20px;
   background-color: var(--blue);
   color: white;
 }
 
-.contentTips span:nth-child(2) {
+.firstTipContainer span:nth-child(1) {
+  border-radius: 7px 0 0 7px;
+  padding-right: 60px;
+}
+.firstTipContainer span:nth-child(2) {
   background-color: var(--dark-blue);
 }
+.firstTipContainer span:nth-child(3) {
+  border-radius: 0 7px 7px 0;
+}
 
-.contentTips p {
+.firstTipContainer strong {
+  font-size: 15px;
   color: var(--gray);
 }

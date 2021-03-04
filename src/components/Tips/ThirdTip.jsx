@@ -7,7 +7,7 @@ export function ThirdTip() {
         underline.
       </p>
       <footer>
-        <amall>Don’t show any tips</amall>
+        <small>Don’t show any tips</small>
         <button>Next</button>
       </footer>
     </div>

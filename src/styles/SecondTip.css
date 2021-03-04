@@ -8,6 +8,14 @@
   color: white;
 }
 
+.secondTipContainer span:nth-child(1) {
+  border-radius: 7px 0 0 7px;
+}
+
+.secondTipContainer span:nth-child(4) {
+  border-radius: 0 7px 7px 0;
+}
+
 .secondTipContainer span:nth-child(2) {
   background-color: var(--dark-blue);
 }

@@ -11,6 +11,9 @@ export default function Container() {
       <FirstTips />
       <SecondTip />
       <ThirdTip />
+      <div className="circle">
+        <div className="minCircle"></div>
+      </div>
     </div>
   );
 }
