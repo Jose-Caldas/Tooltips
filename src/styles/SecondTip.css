@@ -1,0 +1,13 @@
+.secondTipContainer {
+  margin-top: 20px;
+}
+
+.secondTipContainer span {
+  padding: 20px;
+  background-color: var(--blue);
+  color: white;
+}
+
+.secondTipContainer span:nth-child(2) {
+  background-color: var(--dark-blue);
+}

@@ -1,0 +1,24 @@
+.contentTips {
+  display: flex;
+
+  border-radius: 7px;
+  color: white;
+  align-items: center;
+}
+
+.contentTips span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  background-color: var(--blue);
+  color: white;
+}
+
+.contentTips span:nth-child(2) {
+  background-color: var(--dark-blue);
+}
+
+.contentTips p {
+  color: var(--gray);
+}
