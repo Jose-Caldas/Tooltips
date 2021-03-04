@@ -1,23 +1,34 @@
-import "../styles/Container.css";
-import FirstTips from "./Tips/FirstTip";
+import FirstTip from "./Tips/FirstTip";
 import { SecondTip } from "./Tips/SecondTip";
 import { ThirdTip } from "./Tips/ThirdTip";
 import styled from "styled-components";
 
 export default function Container() {
   return (
-    <div>
+    <Content>
       <Wrapper>
-        <FirstTips />
+        <FirstTip />
         <SecondTip />
         <ThirdTip />
         <Circle>
           <div className="minCircle"></div>
         </Circle>
       </Wrapper>
-    </div>
+    </Content>
   );
 }
+
+const Content = styled.div`
+  background-color: white;
+`;
+
+const Wrapper = styled.div`
+  width: 730.18px;
+  height: 739px;
+  background: linear-gradient(128.16deg, #f0f4fd 2.37%, #ecf2ff 88.76%);
+  border-radius: 50%;
+  margin: 0 auto;
+`;
 
 const Circle = styled.div`
   display: flex;
@@ -27,13 +38,6 @@ const Circle = styled.div`
   height: 47px;
   border-radius: 50%;
   border: 1px solid var(--purple);
-`;
-
-const Wrapper = styled.div`
-  width: 730.18px;
-  height: 739px;
-  background: linear-gradient(128.16deg, #f0f4fd 2.37%, #ecf2ff 88.76%);
-  border-radius: 50%;
 
   .minCircle {
     width: 20px;
