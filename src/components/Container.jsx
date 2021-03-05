@@ -31,6 +31,9 @@ const Wrapper = styled.div`
 `;
 
 const Circle = styled.div`
+  position: relative;
+  top: 213px;
+  left: -251px;
   display: flex;
   align-items: center;
   justify-content: center;

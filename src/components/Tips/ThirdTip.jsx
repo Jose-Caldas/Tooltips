@@ -3,8 +3,8 @@ export function ThirdTip() {
   return (
     <ThirdTipContainer>
       <p>
-        Customizable tooltip description. Make your text bold, italic or
-        underline.
+        Customizable tooltip <span>description</span>. Make your text bold,
+        italic or underline.
       </p>
       <footer>
         <small>Don’t show any tips</small>
@@ -15,6 +15,10 @@ export function ThirdTip() {
 }
 
 const ThirdTipContainer = styled.div`
+  position: relative;
+  top: 250px;
+  left: -100px;
+
   width: 453px;
   height: 186px;
   background-color: white;
@@ -29,6 +33,10 @@ const ThirdTipContainer = styled.div`
     color: var(--blue);
     font-size: 20px;
     line-height: 33px;
+  }
+
+  p span {
+    background-color: var(--purple);
   }
 
   footer {
@@ -47,5 +55,15 @@ const ThirdTipContainer = styled.div`
     border-radius: 14px;
     color: white;
     padding: 11px 20px;
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    top: 171px;
+    right: 365px;
+    transform: rotate(45deg);
   }
 `;

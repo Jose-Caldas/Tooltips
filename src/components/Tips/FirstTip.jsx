@@ -23,12 +23,15 @@ const FirstTipContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
   background-color: var(--blue);
   border-radius: 7px;
   width: 410px;
   height: 60px;
-
+  position: relative;
+  top: 156px;
+  right: -380px;
+  box-shadow: 3px 3px 15px var(--dark-blue);
   h2 {
     width: 60%;
     margin: none;
@@ -45,8 +48,9 @@ const FirstTipContainer = styled.div`
     width: 25px;
     background-color: var(--blue);
     top: 26px;
-    right: 178px;
+    right: 91px;
     transform: rotate(45deg);
+    box-shadow: 3px 3px 8px var(--dark-blue);
   }
 
   .active {

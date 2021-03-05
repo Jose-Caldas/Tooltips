@@ -21,12 +21,17 @@ export function SecondTip() {
 }
 
 const SecondTipContainer = styled.div`
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  position: relative;
+  top: 248px;
+  right: -191px;
+  z-index: 1;
 
   span {
     padding: 20px;
     background-color: var(--blue);
     color: white;
+    box-shadow: 3px 3px 15px var(--dark-blue);
   }
 
   span:nth-child(1) {
@@ -39,5 +44,17 @@ const SecondTipContainer = styled.div`
 
   span:nth-child(4) {
     border-radius: 0 7px 7px 0;
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: var(--blue);
+    top: 26px;
+    right: 605px;
+    transform: rotate(45deg);
+    z-index: 1;
+    box-shadow: 2px 2px 10px var(--dark-blue);
   }
 `;
